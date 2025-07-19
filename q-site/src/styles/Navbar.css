@@ -1,0 +1,21 @@
+.Navbar {
+    display: grid;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    position:sticky;
+    top: 0;
+    z-index: 1;
+}
+.NavbarBtns {
+    display: flex;
+    justify-content: space-evenly;
+}
+.progressWrapper {
+    background-color: white;
+    width: 100vw;
+  }
+  .progress {
+    background-color:lightblue;
+    padding-bottom: 3px;
+  }

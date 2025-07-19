@@ -1,22 +1,32 @@
-import './styles/App.css';
+import "./styles/App.css";
+import { useEffect, useState } from "react";
+import { Route, Routes, useNavigate, useLocation } from "react-router-dom";
+import Home from "./components/Home";
+import Navbar from "./components/Navbar";
+import About from "./components/About";
+import Contact from "./components/Contact";
 
 function App() {
+  const navigate = useNavigate();
+  const location = useLocation();
+  const [activeRoute, setActiveRoute] = useState("");
+
+  //Navigation Event Handler
+  const navBtnEvent = (id) => {
+    setActiveRoute(id);
+    //if (progress.current) progress.current.style.width = "0%";
+    window.scrollTo({top:0, behavior: "smooth"});
+    navigate(id === "home" ? "/" : `/${id}`)
+  };
+
   return (
     <div className="App">
-      <header className="App-header">
-        {/* <img src={logo} className="App-logo" alt="logo" />  */}
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Navbar reroute={navBtnEvent} />
+      <Routes>
+        <Route index path="/" element={<Home reroute={navBtnEvent}/>} />
+        <Route path="/About" element={<About reroute={navBtnEvent} />} />
+        <Route path="/Contact" element={<Contact reroute={navBtnEvent} />} />
+      </Routes>
     </div>
   );
 }

@@ -1,0 +1,15 @@
+.Home {
+    height: 150vh;
+    justify-content: center;
+    align-items: center;
+    
+}
+.Home img {
+    position: sticky;
+    top:25%;
+    width: 40%;
+    z-index: 2;
+}
+.Home h1 {
+    background-color: aliceblue;
+}
