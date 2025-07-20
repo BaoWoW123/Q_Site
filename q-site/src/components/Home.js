@@ -1,15 +1,23 @@
 import "../styles/Home.css";
 import lotus from "../assets/lotusicon.png";
-const Home = () => {
-    return (
-        <div className="Home">
-        <img src={lotus} style ={{}} />
-        <div>
+import About  from "./About";
 
-        <h1>asdfsd</h1>
+const Home = () => {
+  return (
+    <div className="Home">
+      <div className="header">
+        <div className="headerImgWrapper">
+            <img src={lotus} alt="lotus logo"/>
         </div>
-        </div>
-    )
-}
+        <div className="headerQuote">“Out of the mud of your fears, struggles, and pain, 
+            the lotus flower of your inner self can grow.” 
+            — Debasish Mridha</div>
+      </div>
+      <div className="homeBody">
+        <About/>
+      </div>
+    </div>
+  );
+};
 
 export default Home;

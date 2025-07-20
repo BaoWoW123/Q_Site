@@ -1,16 +1,27 @@
 .App {
+  position: sticky;
   text-align: center;
+  background: linear-gradient(
+    white,
+    90%,
+    #3c9cab
+  );
+  padding: 0 3vw;
+  background-attachment: fixed;
 }
-
-html, body {
+/* 
+  base #277a88
+  dark #1e5e6a
+  light #3c9cab
+*/
+html,
+body {
   color: black;
-  font-size:30px;
+  font-size: 30px;
   margin: auto;
-  padding: 0;
   height: 100%;
   box-sizing: border-box;
-  background: linear-gradient(to top left, lightskyblue, lightblue);
-  background-attachment: fixed;
+
 }
 
 ::-webkit-scrollbar {

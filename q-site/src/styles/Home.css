@@ -1,15 +1,37 @@
 .Home {
-    height: 150vh;
-    justify-content: center;
-    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 5vh;
+    font-size: inherit;
+    box-sizing: border-box;
     
 }
 .Home img {
-    position: sticky;
-    top:25%;
-    width: 40%;
-    z-index: 2;
+    max-height: 50vh;
 }
-.Home h1 {
-    background-color: aliceblue;
+
+.header {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: transparent;
+    border-bottom: 2px solid #1e5e6a;
+    box-sizing: border-box;
+    animation: load 2s ease 1.5s forwards;
+    opacity: 0;
+    padding: 10vh 0px;
 }
+.headerQuote{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-column: 2/4;    
+    font-size: 40px;
+
+}
+
+@keyframes load {
+    to {
+      opacity: 1;
+    }
+  }

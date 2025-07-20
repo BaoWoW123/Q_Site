@@ -1,21 +1,66 @@
 .Navbar {
-    display: grid;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
+    display: flex;
+    justify-content: space-around;
     position:sticky;
     top: 0;
+    padding: 3vh 0px;
+    background-color: white;
     z-index: 1;
 }
-.NavbarBtns {
-    display: flex;
-    justify-content: space-evenly;
+.navbarBtns {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.navbarBtns > button {
+  background:transparent;
+  border: 0;
+  padding: 0 1vw;
+  font-size: larger;
+  
 }
 .progressWrapper {
-    background-color: white;
+    position: absolute;
+    background-color: transparent;
     width: 100vw;
+    bottom: 0;
   }
   .progress {
-    background-color:lightblue;
+    background-color:#277a88;
     padding-bottom: 3px;
   }
+
+.navbarTitle {
+  display: flex;
+  align-items: center;
+  font-size: larger;
+}
+
+
+button:hover {
+  transition: .1s ease-in;
+  color: #3c9cab;
+}
+
+.activeRoute {
+  color: #277a88;
+  transition: .1s ease-in;
+}
+
+@keyframes activeRoute {
+  0% {
+    color: #277a88;
+    width: 0%;
+    border-bottom: 2px solid black;
+  }
+  100% {
+    width: 100%;
+    border-bottom: 2px solid black;
+    color: #277a88;
+  }
+}
+@keyframes load {
+  to {
+    opacity: 1;
+  }
+}

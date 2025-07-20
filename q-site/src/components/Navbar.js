@@ -1,11 +1,11 @@
 import "../styles/Navbar.css";
 import React, { useEffect, useState } from "react";
 
-const Navbar = ({ reroute, active }) => {
+const Navbar = ({ reroute, activeRoute }) => {
     const [progress,setProgress ]= useState(0);
     const navArr = [
         { id: "home", label: "Home" },
-        { id: "about", label: "About" },
+        { id: "team", label: "Team" },
         { id: "contact", label: "Contact" }
     ]
       //Scroll progress bar effect
@@ -19,22 +19,22 @@ const Navbar = ({ reroute, active }) => {
       
       const scrolled =((winScroll / height) * 100);
       setProgress(scrolled)
-      console.log(progress)
-
     };
-
+    
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   });
   return (
     <div className="Navbar">
+      <title>Q's Counseling</title>
+        <div className="navbarTitle">Q's Counseling </div>
       <div className="navbarBtns">
         { navArr.map((el) => (
             <button
                 key={el.id}
                 type="button"
                 onClick={() => reroute(el.id)}
-                className={active === el.id ? "active" : ""}
+                className={activeRoute === el.id ? "activeRoute" : ""}
             >
                 <div>{el.label}</div>
             </button>
