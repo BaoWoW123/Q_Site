@@ -1,4 +1,5 @@
 import "../styles/Contact.css";
+import Footer from "./Footer";
 
 const Contact = () => {
   return (
@@ -38,6 +39,7 @@ const Contact = () => {
       your insurance. See you then!
       </div>
       </div>
+      <Footer/>
     </div>
   );
 };

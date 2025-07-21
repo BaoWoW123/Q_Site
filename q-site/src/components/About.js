@@ -1,20 +1,35 @@
+import "../styles/About.css";
+import therapy from '../assets/therapy.jpg';
+import monster from '../assets/monster.png';
+
 const About = (props) => {
   return (
-    <div>
+    <div className="About">
       <h1>About</h1>
+      <div className="aboutSection">
+      <img src={therapy} alt='therapy counseling between female client and counselor'/>
       <div>
-        Welcome to your journey. At Q’s Counseling, healing is seen as a
+        <h3>Welcome to your journey.</h3>
+        <p>At Q’s Counseling, healing is seen as a
         personal and powerful process; one that honors where you’ve been while
         gently guiding you toward where you’re going. Like the lotus rising from
         the mud, your journey may begin in uncertainty, but it holds the power
-        to bloom into something whole, resilient, and deeply yours.
+        to bloom into something whole, resilient, and deeply yours.</p>
       </div>
-      <div>
+      </div>
+      <div >
+      <div className="aboutSection">
+        <div>
+
+      <h3>A safe place to heal, grow, and be heard.</h3>
         Q’s Counseling was created to hold space for your meaningful journey
         through adversity, with empathy and grace, not judgement. Whether you're
         navigating life transitions, healing through pain, or simply seeking to
         feel more like yourself again, this is a space to be seen, supported,
         and gently guided back to your center.
+        </div>
+      <img src={monster}/>
+      </div>
       </div>
     </div>
   );

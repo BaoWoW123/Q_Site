@@ -16,8 +16,7 @@
   background:transparent;
   border: 0;
   padding: 0 1vw;
-  font-size: larger;
-  
+  font-size: large;
 }
 .progressWrapper {
     position: absolute;
@@ -40,6 +39,7 @@
 button:hover {
   transition: .1s ease-in;
   color: #3c9cab;
+  transform: scale(1.2);
 }
 
 .activeRoute {

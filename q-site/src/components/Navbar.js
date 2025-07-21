@@ -1,4 +1,5 @@
 import "../styles/Navbar.css";
+import logo from '../assets/lotusicon.png';
 import React, { useEffect, useState } from "react";
 
 const Navbar = ({ reroute, activeRoute }) => {
@@ -20,14 +21,17 @@ const Navbar = ({ reroute, activeRoute }) => {
       const scrolled =((winScroll / height) * 100);
       setProgress(scrolled)
     };
-    
+
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   });
   return (
     <div className="Navbar">
       <title>Q's Counseling</title>
-        <div className="navbarTitle">Q's Counseling </div>
+        <div className="navbarTitle">
+          Q's Counseling
+          <img src={logo} alt='lotus logo' style={{maxWidth:'50px', paddingLeft:'10px'}}/>
+        </div>
       <div className="navbarBtns">
         { navArr.map((el) => (
             <button

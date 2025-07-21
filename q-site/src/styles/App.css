@@ -3,9 +3,10 @@
   text-align: center;
   background: linear-gradient(
     white,
-    90%,
+    75%,
     #3c9cab
   );
+  min-height: 100vh;
   padding: 0 3vw;
   background-attachment: fixed;
 }
@@ -17,11 +18,11 @@
 html,
 body {
   color: black;
-  font-size: 30px;
+  font-size: 25px;
   margin: auto;
   height: 100%;
   box-sizing: border-box;
-
+  min-height: 100vh;
 }
 
 ::-webkit-scrollbar {

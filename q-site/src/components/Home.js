@@ -1,6 +1,7 @@
 import "../styles/Home.css";
 import lotus from "../assets/lotusicon.png";
 import About  from "./About";
+import Footer from "./Footer";
 
 const Home = () => {
   return (
@@ -13,9 +14,8 @@ const Home = () => {
             the lotus flower of your inner self can grow.” 
             — Debasish Mridha</div>
       </div>
-      <div className="homeBody">
         <About/>
-      </div>
+        <Footer/>
     </div>
   );
 };

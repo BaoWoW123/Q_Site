@@ -1,0 +1,15 @@
+.Team {
+    background-color: white;
+    padding: 0px 100px;
+    min-height: 80vh;
+}
+.quynh {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    gap: 40px;
+    border-bottom: 1px solid black;
+    align-items: center;
+}
+.Team > div {
+    padding:0 50px;
+}
