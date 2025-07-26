@@ -7,9 +7,18 @@ const Team = () => {
     <div className="Team">
       <h1>Our Team</h1>
       <div className="quynh">
-        <div className="avatar">
           <h2>Meet Quynh</h2>
+        <div className="avatar">
           <img src={avatar} />
+          <div className="eduBg">
+          <b>Educational Background:</b>
+          <div>
+          M.S., Clinical Mental Health Counseling w/
+            emphasis in Addictions, East Carolina University, Greenville, NC
+          </div>
+            <div>B.A., Psychology, Sacramento State University Sacramento,
+            Sacramento, CA</div>
+          </div>
         </div>
         <div className="bio">
           <div>
@@ -27,20 +36,16 @@ const Team = () => {
             collaborative space where those struggling with quiet battles can
             feel seen, heard, and supported.
           </div>
-          My counseling style is warm and collaborative; drawing from
+         <div> My counseling style is warm and collaborative; drawing from
           person-centered therapy, Cognitive Behavioral Therapy (CBT), and
           mindfulness. But more than techniques, I believe in meeting you
           exactly where you are. Whether you’re navigating anxiety, depression,
           trauma, ADHD, or just longing to feel more like yourself again and/or
           tell your story, I am here to support you. This is your space - to
           breathe, to be, to begin again.
-          <div>
-            Educational Background: M.S., Clinical Mental Health Counseling w/
-            emphasis in Addictions, East Carolina University, Greenville, NC
-            B.A., Psychology, Sacramento State University Sacramento,
-            Sacramento, CA
-          </div>
+</div>
         </div>
+
       </div>      
         <Footer/>
     </div>

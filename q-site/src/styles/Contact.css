@@ -3,3 +3,11 @@
     flex-direction: column;
     background-color: white;
 }
+
+
+.Contact form {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
