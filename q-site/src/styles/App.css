@@ -25,6 +25,17 @@ body {
   min-height: 100vh;
 }
 
+button {
+  background:transparent;
+  border: 0;
+}
+
+button:hover {
+  transition: .1s ease-in;
+  color: #3c9cab;
+  transform: scale(1.15);
+}
+
 ::-webkit-scrollbar {
   display: none;
 }

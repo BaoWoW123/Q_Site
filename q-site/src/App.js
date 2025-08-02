@@ -1,15 +1,13 @@
 import "./styles/App.css";
-import { useEffect, useState } from "react";
-import { Route, Routes, useNavigate, useLocation } from "react-router-dom";
+import { useState } from "react";
+import { Route, Routes, useNavigate } from "react-router-dom";
 import Home from "./components/Home";
 import Navbar from "./components/Navbar";
-import About from "./components/About";
 import Contact from "./components/Contact";
 import Team from "./components/Team";
 
 function App() {
   const navigate = useNavigate();
-  const location = useLocation();
   const [activeRoute, setActiveRoute] = useState("");
 
   //Navigation Event Handler

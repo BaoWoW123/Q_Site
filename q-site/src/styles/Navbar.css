@@ -13,8 +13,6 @@
   justify-content: center;
 }
 .navbarBtns > button {
-  background:transparent;
-  border: 0;
   padding: 0 1vw;
   font-size: large;
 }
@@ -33,13 +31,6 @@
   display: flex;
   align-items: center;
   font-size: larger;
-}
-
-
-button:hover {
-  transition: .1s ease-in;
-  color: #3c9cab;
-  transform: scale(1.2);
 }
 
 .activeRoute {

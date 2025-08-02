@@ -1,6 +1,8 @@
 import "../styles/Contact.css";
 import Footer from "./Footer";
 import { useForm, ValidationError } from "@formspree/react";
+import MsgForm from "./MsgForm";
+import ApptForm from "./ApptForm";
 
 const Contact = () => {
   const [state, handleSubmit, reset] = useForm(
@@ -20,57 +22,36 @@ const Contact = () => {
         are ready to begin your counseling journey, we’re here to listen. We
         look forward to connecting with you.
       </div>
-      <div>
-        <h1>Book an appointment. </h1>
-        Think we can help? Take the first step in your journey and book a free
-        phone consultation appointment today to see if we are a match. Ready to
-        jump right into it? Book an initial intake appointment and fill out the
-        required documentation before your appointment.
-        <form onSubmit={handleSubmit}>
-          <h1>Message Us!</h1>
-          <label htmlFor="email">Email</label>
-          <input id="email" type="email" name="email" required />
-          <ValidationError field="email" prefix="Email" errors={state.errors} />
-          <label htmlFor="name">Name</label>
-          <input id="name" type="text" name="name" required />
-          <label htmlFor="phone">Phone Number</label>
-          <input
-            id="phone"
-            type="tel"
-            name="phone"
-            placeholder="(123) 123-4567"
-            required
-          />
-          <ValidationError field="phone" prefix="phone" errors={state.errors} />
-          <textarea
-            id="message"
-            name="message"
-            placeholder="Optional message."
-          />
-          <ValidationError
-            prefix="Message"
-            field="messsage"
-            errors={state.errors}
-          />
 
-          <button type="submit" disabled={state.submitting}>
-            Send
-          </button>
-        </form>
-        Please note: Payment is due at the time of service.
+      <h2>Book an appointment. </h2>
+      <div className="contactSubsection">
         <div>
-          Please reach out for any questions regarding fees and lengths of
-          services <a href="https://www.google.com">here.</a>
+          <div>
+            Think we can help? Take the first step in your journey and book a
+            free phone consultation appointment today to see if we are a match.
+          </div>
+          <div>
+            <MsgForm />
+          </div>
         </div>
         <div>
+          <div>
+            Ready to jump right into it? Book an initial intake appointment and
+            fill out the required documentation before your appointment.
+          </div>
+          <div>
+            <ApptForm />
+          </div>
+        </div>
+        <div>
+          <b>Note:</b> Payment is due at the time of service. Please reach out
+          for any questions regarding fees and lengths of services{" "}
+          <a href="https://www.google.com">here.</a>{" "}
           Q’s Counseling PLLC currently only offers telehealth appointments via
           a secured HIPAA compliant platform. We are in the process of getting
           credentialed with insurances and is only accepting self-pay
-          appointments at this time.
-        </div>
-        <div>
-          Please check back at a later time if you’d prefer to use your
-          insurance. See you then!
+          appointments at this time. Please check back at a later time if you’d
+          prefer to use your insurance. See you then!
         </div>
       </div>
       <Footer />
