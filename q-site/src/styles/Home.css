@@ -15,7 +15,7 @@
   background-color: transparent;
   border-bottom: 2px solid #1e5e6a;
   box-sizing: border-box;
-
+  align-items: center;
   animation: 
     loadQuote 1s ease-in 1s forwards, 
     shrink 2s ease-out 4s forwards;
@@ -28,7 +28,7 @@
   align-items: center;
   justify-content: center;
   grid-column: 2/4;
-  font-size: 40px;
+  font-size: larger;
 }
 
 @keyframes loadQuote {
@@ -41,4 +41,21 @@
   to {
     padding: 5vh 0;
   }
+}
+
+@media (max-width: 1020px) {
+  .Home {
+    padding: 2vh;
+    padding-bottom: 8vh;
+  }
+ .header {
+  display: flex;
+  flex-direction: column;
+  padding: 15vh 0;
+ }
+ @keyframes shrink{
+  to {
+    padding: 1vh 0;
+  }
+}
 }
