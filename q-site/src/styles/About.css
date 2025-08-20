@@ -1,35 +1,32 @@
 .About {
-    display: grid;
-    row-gap: 5px;
+  display: grid;
+  row-gap: 5px;
 }
 .About > h1 {
-    grid-column: 1/2;
-    padding: 30px;
-    margin: 0;
-    background-color: white;
+  grid-column: 1/2;
+  padding: 30px;
+  margin: 0;
+  background-color: white;
 }
 .aboutSection {
-    display: flex;
-    background-color: white;
+  display: flex;
+  background-color: white;
 }
 
 .aboutSection div {
-    padding: 10px 30px;
+  padding: 10px 30px;
 }
 
 .aboutSection img {
-    max-width: 100%;
+  max-width: 100%;
 }
 
-
 @media (max-width: 1020px) {
-   .About {
+  .About {
     display: flex;
     flex-direction: column;
-   }
-   .About > h1 {
-   }
-   .aboutSection {
-    flex-direction: column;
-   }
   }
+  .aboutSection {
+    flex-direction: column;
+  }
+}

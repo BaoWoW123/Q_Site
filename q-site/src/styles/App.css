@@ -45,3 +45,13 @@ button:hover {
   display: block;
   max-width: 100%;
  }
+
+
+ @media (max-width: 1020px) {
+  .App {
+    padding-bottom: 5vh;
+  }
+  button:hover {
+    transform: scale(1);
+  }
+}

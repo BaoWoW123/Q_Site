@@ -6,10 +6,13 @@
   justify-content: space-between;
 }
 
+.Contact > :first-child {
+  padding: 0 10rem;
+}
+
 .Contact h2 {
-  border-bottom: 1px solid black;
-  grid-column:1/3;
-  padding-bottom:1rem;
+  grid-column: 1/3;
+  padding-bottom: 1rem;
   box-sizing: border-box;
 }
 
@@ -20,8 +23,9 @@
   align-items: center;
   gap: 10px;
 }
-.contactSubsection >:nth-child(3), .contactSubsection >:nth-child(2) {
-    padding: 0 1rem 1rem 1rem;
+.contactSubsection > :nth-child(3),
+.contactSubsection > :nth-child(2) {
+  padding: 0 1rem 1rem 1rem;
 }
 .contactSubsection > :last-child {
   font-size: 2vh;
@@ -40,7 +44,24 @@
 }
 
 .apptNote {
-    bottom: 2rem;
-    padding: 0 4rem;
-    font-size: smaller;
+  bottom: 2rem;
+  padding: 0 4rem;
+  font-size: smaller;
+}
+
+@media (max-width: 1020px) {
+  .Contact {
+    display: flex;
+    flex-direction: column;
+  }
+  .Contact > :first-child {
+    padding: 0px 1rem;
+  }
+  .contactSubsection > h2 {
+    font-size: 1.8rem;
+  }
+  .contactSubsection {
+    display: flex;
+    flex-direction: column;
+  }
 }

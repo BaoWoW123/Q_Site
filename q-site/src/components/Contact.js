@@ -13,7 +13,7 @@ const Contact = () => {
 
   return (
     <div className="Contact">
-      <div style={{padding:' 0 10rem'}}>
+      <div>
       <h1>Contact</h1>
         Taking the first step can feel like the hardest part, but you don’t have
         to do it alone. Whether you have questions, need more information, or
