@@ -1,15 +1,15 @@
-import avatar from "../assets/avataaars.svg";
+import avatar from "../assets/avatars.svg";
 import "../styles/Team.css";
 import Footer from "./Footer";
 
 const Team = () => {
-  return (
+  return (<>
     <div className="Team">
       <h1>Our Team</h1>
       <div className="quynh">
         <h2>Meet Quynh</h2>
         <div className="avatar">
-          <img src={avatar} />
+          <img src={avatar} alt='avatar of Qunyh'/>
           <div className="eduBg">
             <b>Educational Background:</b>
             <div>
@@ -50,8 +50,9 @@ const Team = () => {
           </div>
         </div>
       </div>
-      <Footer />
     </div>
+      <Footer />
+      </>
   );
 };
 

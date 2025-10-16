@@ -1,9 +1,14 @@
 .Contact {
   display: flex;
   flex-direction: column;
-  background-color: white;
-  min-height: 80vh;
   justify-content: space-between;
+  padding: 5rem;
+  padding-bottom: 0px;
+  background-color: white;
+  width: 90%;
+  box-sizing: border-box;
+  margin: auto;
+  min-height: 90vh;
 }
 
 .Contact > :first-child {
@@ -21,12 +26,10 @@
   grid-template-columns: 1fr 1fr;
   justify-content: center;
   align-items: center;
+  margin: auto;
   gap: 10px;
 }
-.contactSubsection > :nth-child(3),
-.contactSubsection > :nth-child(2) {
-  padding: 0 1rem 1rem 1rem;
-}
+
 .contactSubsection > :last-child {
   font-size: 2vh;
   padding: 1rem;
@@ -45,7 +48,7 @@
 
 .apptNote {
   bottom: 2rem;
-  padding: 0 4rem;
+  padding: .5rem 4rem;
   font-size: smaller;
 }
 
@@ -53,6 +56,7 @@
   .Contact {
     display: flex;
     flex-direction: column;
+    padding: .5rem;
   }
   .Contact > :first-child {
     padding: 0px 1rem;
@@ -63,5 +67,8 @@
   .contactSubsection {
     display: flex;
     flex-direction: column;
+  }
+  .apptNote {
+    padding: .5rem;
   }
 }

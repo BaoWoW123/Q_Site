@@ -28,7 +28,7 @@ const About = (props) => {
         feel more like yourself again, this is a space to be seen, supported,
         and gently guided back to your center.
         </div>
-      <img src={monster}/>
+      <img src={monster} alt='woman overwhelmed by a psychological monster'/>
       </div>
       </div>
     </div>

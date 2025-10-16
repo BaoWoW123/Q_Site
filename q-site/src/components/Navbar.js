@@ -7,7 +7,9 @@ const Navbar = ({ reroute, activeRoute }) => {
     const navArr = [
         { id: "home", label: "Home" },
         { id: "team", label: "Team" },
-        { id: "contact", label: "Contact" }
+        { id: "contact", label: "Contact" },
+        { id: "faq", label: "FAQ" },
+        { id: "resources", label: "Resources" }
     ]
       //Scroll progress bar effect
   useEffect(() => { 

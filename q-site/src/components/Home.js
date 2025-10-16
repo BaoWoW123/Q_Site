@@ -5,6 +5,7 @@ import Footer from "./Footer";
 
 const Home = () => {
   return (
+    <>
     <div className="Home">
       <div className="header">
         <div className="headerImgWrapper">
@@ -15,8 +16,9 @@ const Home = () => {
             — Debasish Mridha</div>
       </div>
         <About/>
-        <Footer/>
     </div>
+        <Footer/>
+        </>
   );
 };
 

@@ -1,10 +1,11 @@
 .About {
   display: grid;
   row-gap: 5px;
+
 }
 .About > h1 {
   grid-column: 1/2;
-  padding: 30px;
+  padding: 1.5rem;
   margin: 0;
   background-color: white;
 }
@@ -14,7 +15,8 @@
 }
 
 .aboutSection div {
-  padding: 10px 30px;
+  padding: .5rem 1rem;
+
 }
 
 .aboutSection img {

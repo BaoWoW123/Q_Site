@@ -1,10 +1,11 @@
 .Home {
   display: flex;
   flex-direction: column;
-  padding: 5vh;
+  padding: 0px 3rem;
   font-size: inherit;
   box-sizing: border-box;
 }
+
 .Home img {
   max-height: 50vh;
 }
@@ -39,7 +40,7 @@
 
 @keyframes shrink{
   to {
-    padding: 5vh 0;
+    padding: 15vh 0;
   }
 }
 

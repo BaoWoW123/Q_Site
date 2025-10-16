@@ -5,6 +5,8 @@ import Home from "./components/Home";
 import Navbar from "./components/Navbar";
 import Contact from "./components/Contact";
 import Team from "./components/Team";
+import Faq from "./components/Faq";
+import Resources from "./components/Resources";
 
 function App() {
   const navigate = useNavigate();
@@ -25,6 +27,8 @@ function App() {
         <Route index path="/" element={<Home reroute={navBtnEvent} />} />
         <Route path="/Team" element={<Team reroute={navBtnEvent} />} />
         <Route path="/Contact" element={<Contact reroute={navBtnEvent}  />} />
+        <Route path="/Faq" element={<Faq reroute={navBtnEvent}  />} />
+        <Route path="/Resources" element={<Resources reroute={navBtnEvent}  />} />
       </Routes>
     </div>
   );
