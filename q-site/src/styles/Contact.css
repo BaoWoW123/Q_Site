@@ -24,15 +24,16 @@
 .contactSubsection {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  grid-template-rows: 3fr 2fr 3fr;
   justify-content: center;
   align-items: center;
-  margin: auto;
   gap: 10px;
 }
 
 .contactSubsection > :last-child {
   font-size: 2vh;
   padding: 1rem;
+  
   grid-column: 1/3;
 }
 
@@ -48,7 +49,7 @@
 
 .apptNote {
   bottom: 2rem;
-  padding: .5rem 4rem;
+  padding: 2rem 4rem;
   font-size: smaller;
 }
 
