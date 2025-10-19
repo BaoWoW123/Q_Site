@@ -26,6 +26,10 @@ body {
   max-width: 100%;
 }
 
+#root {
+  max-width: 100% !important;
+  overflow-x: hidden;
+}
 button {
   background:transparent;
   border: 0;

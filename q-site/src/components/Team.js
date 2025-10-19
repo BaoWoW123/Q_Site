@@ -1,4 +1,4 @@
-import avatar from "../assets/avatars.svg";
+import quynh from "../assets/quynh.jpg";
 import "../styles/Team.css";
 import Footer from "./Footer";
 
@@ -6,10 +6,10 @@ const Team = () => {
   return (<>
     <div className="Team">
       <h1>Our Team</h1>
-      <div className="quynh">
+      <div className="teamList">
         <h2>Meet Quynh</h2>
-        <div className="avatar">
-          <img src={avatar} alt='avatar of Qunyh'/>
+        <div className="member">
+          <img src={quynh} alt='headshot of Qunyh'/>
           <div className="eduBg">
             <b>Educational Background:</b>
             <div>

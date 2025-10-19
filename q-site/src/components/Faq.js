@@ -193,7 +193,7 @@ const Faq = () => {
             </AccordionSummary>
             <AccordionDetails>
               <Typography>
-                You can contact me here via the website or e-mail me at
+                You can contact me <a href="/contact"> here</a> via the website or e-mail me at
                 quynh@qscounselingpllc.com to schedule a free 15-minute
                 consultation. This helps us see if we’re a good fit before
                 starting therapy.
