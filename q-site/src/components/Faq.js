@@ -102,11 +102,11 @@ const Faq = () => {
             </AccordionSummary>
             <AccordionDetails>
               <Typography>
-                At this time, I am self-pay only and do not accept insurance. I
+                At this time, I am in-network with Aetna and BCBS NC. I
                 can provide a superbill upon request, which you may submit to
                 your insurance provider for potential out-of-network
-                reimbursement. I am in the process of working with insurances to
-                become credentialed, so if you prefer to use insurance, please
+                reimbursement. I am in the process of working with other insurances to
+                become credentialed, so if you prefer to use insurance that isn't currently accepted, please
                 check back at a later time.
               </Typography>
             </AccordionDetails>

@@ -1,11 +1,7 @@
 .App {
   position: sticky;
   text-align: center;
-  background: linear-gradient(
-    white,
-    90%,
-    #3c9cab
-  );
+  background: linear-gradient(white, 90%, #3c9cab);
   min-height: 100vh;
   max-width: 100%;
   background-attachment: fixed;
@@ -18,25 +14,33 @@
 html,
 body {
   color: black;
-  font-size: 1.3rem;
+  font-size: 1.25rem;
   margin: auto;
   height: 100%;
   box-sizing: border-box;
   min-height: 100vh;
   max-width: 100%;
+  font-family: "Segoe UI", Roboto, sans-serif;
+}
+
+h1,
+h2,
+h3 {
+  color: #1e5e6a;
 }
 
 #root {
   max-width: 100% !important;
   overflow-x: hidden;
 }
+
 button {
-  background:transparent;
+  background: transparent;
   border: 0;
 }
 
 button:hover {
-  transition: .1s ease-in;
+  transition: 0.1s ease-in;
   color: #3c9cab;
   transform: scale(1.15);
 }
@@ -45,18 +49,18 @@ button:hover {
   display: none;
 }
 
- img {
+img {
   height: auto;
   display: block;
   max-width: 100%;
- }
+}
 
 ul {
   list-style-type: none;
   padding: 0;
 }
 
- @media (max-width: 1020px) {
+@media (max-width: 1020px) {
   button:hover {
     transform: scale(1);
   }

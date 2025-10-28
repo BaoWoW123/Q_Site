@@ -1,61 +1,57 @@
 import "../styles/Contact.css";
 import Footer from "./Footer";
-import { useForm } from "@formspree/react";
 
 const Contact = () => {
-  const [state, handleSubmit, reset] = useForm(
-    process.env.REACT_APP_formspreeURL
-  );
-
-  if (state.succeeded) {
-    return <div>Message sent!</div>;
-  }
-
   return (
     <>
-      <div className="Contact">
-        <h1>Contact</h1>
-        <div>
-          Taking the first step can feel like the hardest part, but you don’t
-          have to do it alone. Whether you have questions, need more
-          information, or are ready to begin your counseling journey, we’re here
-          to listen. We look forward to connecting with you.
-        </div>
+      <div className="contact-container">
+        <section className="contact-header">
+          <h1>Contact</h1>
+          <p>
+            Taking the first step can feel like the hardest part, but you don’t
+            have to do it alone. Whether you have questions, need more
+            information, or are ready to begin your counseling journey, we’re
+            here to listen. We look forward to connecting with you.
+          </p>
+        </section>
 
-        <div className="contactSubsection">
-          <h2>Book an appointment </h2>
-          <div>
-            Think we can help? Take the first step in your journey and book a
-            free phone consultation appointment today to see if we are a match.
+        <section className="contact-book">
+          <h2>Book an appointment</h2>
+          <div className="contact-book-text">
+            <p>
+              Think we can help? Take the first step in your journey and book a
+              free phone consultation appointment today to see if we are a
+              match.
+            </p>
+            <p>
+              Ready to jump right into it? Book an initial intake appointment
+              and fill out the required documentation before your appointment.
+            </p>
           </div>
-          <div>
-            Ready to jump right into it? Book an initial intake appointment and
-            fill out the required documentation before your appointment.
-          </div>
-          <button
-            className="apptBtn"
-            onClick={() =>
-              window.open(
-                "https://quynh-akers.clientsecure.me/",
-                "_blank",
-                "noopener,noreferrer"
-              )
-            }
-          >
-            Book an appointment
-          </button>
-          </div>
-          <div className="apptNote">
-            <b>Note:</b> Payment is due at the time of service. Please reach out
-            for any questions regarding fees and lengths of services{" "}
-            <a href="https://quynh-akers.clientsecure.me/">here.</a> Q’s
-            Counseling PLLC currently only offers telehealth appointments via a
-            secured HIPAA compliant platform. We are in the process of getting
-            credentialed with insurances and is only accepting self-pay
-            appointments at this time. Please check back at a later time if
-            you’d prefer to use your insurance. See you then!
-          </div>
-        
+          <button className="contact-button"><span>Book an appointment</span></button>
+        </section>
+
+        <section className="contact-info">
+          <h3>Important Information</h3>
+          <p>
+            Payment is due at the time of service. Please reach out for any
+            questions regarding fees or session lengths <a href="https://quynh-akers.clientsecure.me/">here.</a>
+          </p>
+          <p>
+            All sessions are currently held via a secure, HIPAA-compliant
+            telehealth platform.
+          </p>
+        </section>
+
+        <section className="contact-services">
+          <h3>Services &amp; Insurance</h3>
+          <p>
+            Q’s Counseling offers individual therapy services for adolescents
+            and adults (16+). We currently accept self-pay and are
+            in-network with Aetna and BCBS NC. Please contact us with any
+            questions about coverage or rates <a href="https://quynh-akers.clientsecure.me/">here.</a>
+          </p>
+        </section>
       </div>
       <Footer />
     </>
