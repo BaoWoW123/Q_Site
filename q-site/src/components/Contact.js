@@ -28,14 +28,19 @@ const Contact = () => {
               and fill out the required documentation before your appointment.
             </p>
           </div>
-          <button className="contact-button"><span>Book an appointment</span></button>
+          <button
+            className="contact-button" onClick={() => 
+              window.open('https://quynh-akers.clientsecure.me/', '_blank', 'noopener,noreferrer')}>
+            <span>Book an appointment</span>
+          </button>
         </section>
 
         <section className="contact-info">
           <h3>Important Information</h3>
           <p>
             Payment is due at the time of service. Please reach out for any
-            questions regarding fees or session lengths <a href="https://quynh-akers.clientsecure.me/">here.</a>
+            questions regarding fees or session lengths{" "}
+            <a href="https://quynh-akers.clientsecure.me/">here.</a>
           </p>
           <p>
             All sessions are currently held via a secure, HIPAA-compliant
@@ -47,9 +52,10 @@ const Contact = () => {
           <h3>Services &amp; Insurance</h3>
           <p>
             Q’s Counseling offers individual therapy services for adolescents
-            and adults (16+). We currently accept self-pay and are
-            in-network with Aetna and BCBS NC. Please contact us with any
-            questions about coverage or rates <a href="https://quynh-akers.clientsecure.me/">here.</a>
+            and adults (16+). We currently accept self-pay and are in-network
+            with Aetna and BCBS NC. Please contact us with any questions about
+            coverage or rates{" "}
+            <a href="https://quynh-akers.clientsecure.me/">here.</a>
           </p>
         </section>
       </div>
